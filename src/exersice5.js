@@ -59,7 +59,7 @@ function booksByAuthor(dictionary) {
   let result = []; // 
 
   for (let author in dictionary) { // loop authors with this clean method
-    const authorsBooks = dictionary[author];
+    const authorsBooks = dictionary[author]; //This is how out situation with spaces is addressed NOT dictionary['author'] NOR dictionary.['author']
 
     for (let i = 0; i < authorsBooks.length; i++) { // loop each authors books
       const book = authorsBooks[i];
@@ -74,7 +74,7 @@ function booksByAuthor(dictionary) {
     }
   }
 
-  return result; // 6️⃣ return final array
+  return result; // return final array
 }
 
 
